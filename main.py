@@ -49,7 +49,7 @@ def main() -> None:
         
         while True:
             time.sleep(10)
-            urlOfRank = "https://ej-3.t-edu.tech/standings-data/b2025"
+            urlOfRank = "https://ej-3.t-edu.tech/standings-data/b2025"#Это ссылка на B параллель, если нужна другая, то просто замените
             data = []
             with urllib.request.urlopen(urlOfRank) as url:
                 data = json.loads(url.read().decode())
