@@ -38,7 +38,7 @@ def main() -> None:
             people = {item['name']: [problem['tasks'] for problem in item['per_contests']] for item in standings}
             changes = []
             for key in pastPeople:
-                if key in people and key != "Ланской Кирилл":
+                if key in people:
                     if pastPeople[key] != people[key]:
                         for i, v in enumerate(people[key]):
                             if pastPeople[key][i] != v:
