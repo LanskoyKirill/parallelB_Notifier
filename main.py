@@ -22,8 +22,8 @@ def main() -> None:
         pastPeople = {}
         
         # Start keep_alive server in a separate thread
-        keep_alive_thread = threading.Thread(target=keep_alive, daemon=True)
-        keep_alive_thread.start()
+        #keep_alive_thread = threading.Thread(target=keep_alive, daemon=True)
+        #keep_alive_thread.start()
         
         while True:
             time.sleep(120)
